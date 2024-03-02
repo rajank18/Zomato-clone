@@ -1,0 +1,477 @@
+@media screen and (max-width: 800px) {
+  .left,
+  .main,
+  .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --navbar-height: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black; /* Hide the scrollbar handle */
+}
+
+/*Navbar*/
+
+#logo img {
+  margin: 18px 50px;
+  width: 140px;
+  height: 100px;
+  border-radius: 180px;
+  image-rendering: crisp-edges;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  height: 135px;
+  overflow-y: hidden;
+  top: 0px;
+}
+
+#navbar ul {
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 540;
+}
+
+#navbar::before {
+  content: "";
+  background-color: rgb(240, 240, 240);
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  z-index: -1;
+}
+
+#navbar ul li {
+  margin-left: 120px;
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255) !important;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+}
+
+/*HOME*/
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-items: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  background: url("img/food1.jpg") no-repeat center center/cover; /*no repeat*/
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h1 {
+  color: rgb(235, 233, 233);
+  text-align: right;
+  font-family: "Poppins", sans-serif;
+}
+
+.hprime {
+  font-size: 3.8rem;
+  padding: 12px;
+  margin-top: 190px;
+  text-align: center;
+  font-family: "Marvel", sans-serif;
+  font-weight: 660;
+  color: white !important;
+}
+
+.pprime {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  margin-top: 60px;
+  text-align: center;
+  font-weight: 660;
+}
+
+.pprime1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  margin-top: 2px;
+  text-align: center;
+  font-weight: 660;
+}
+
+#btn {
+  border-radius: 10px;
+  border-width: 0px;
+  border-color: rgb(255, 0, 0);
+  background-color: rgb(255, 0, 0);
+  color: white;
+  height: 200%;
+  padding: 1%;
+  font-size: 16px;
+  font-family: "Marvel", sans-serif;
+  font-weight: 600;
+  margin-top: 25px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+}
+
+/* .service-cont{
+    margin-top: 300px;
+} */
+
+.pizza {
+  margin-top: 273px;
+  margin-left: 30px;
+  border-radius: 40px;
+  width: 50%;
+  height: 800px;
+}
+
+.hprime-cent {
+  position: absolute;
+  top: 1130px;
+  left: calc(348px + 46%);
+  color: red;
+  font-family: "Marvel", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 2.9rem;
+}
+
+.pprime-cent {
+  position: absolute;
+  top: 1210px;
+  left: calc(120px + 49%);
+  color: red;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 660;
+  font-family: "Marvel", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.delboy {
+  margin-top: 70px;
+  margin-left: 650px;
+  border-radius: 40px;
+  width: 55%;
+  height: 500px;
+}
+
+.hsecond-cent {
+  position: absolute;
+  margin-top: 180px;
+  left: calc(155px);
+  color: red;
+  font-family: "Marvel", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 2.9rem;
+}
+
+.psecond-cent {
+  position: absolute;
+  margin-top: 250px;
+  left: calc(74px);
+  color: red;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 660;
+  font-family: "Marvel", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.delgirl {
+  margin-top: 70px;
+  margin-left: 30px;
+  border-radius: 40px;
+  width: 55%;
+  height: 520px;
+}
+
+.hlast-cent {
+  position: absolute;
+  margin-top: 185px;
+  left: calc(155px + 56.5%);
+  color: red;
+  font-family: "Marvel", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 2.9rem;
+}
+
+.plast-cent {
+  position: absolute;
+  margin-top: 255px;
+  left: calc(74px + 55.6%);
+  color: red;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 660;
+  font-family: "Marvel", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.hr1 {
+  border-color: rgb(0, 0, 0);
+  height: 0px;
+  width: 98%;
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+.offer {
+  text-align: left;
+  padding-top: 16px;
+  font-size: 2.9rem;
+  margin-left: 13px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.offer-box {
+  margin: 34px;
+  display: flex;
+  margin-left: 120px;
+}
+
+.offer-box .box1 {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 34px;
+  margin: 3px;
+  overflow-y: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adding a smooth transition effect */
+}
+
+.offer-box .box1:hover {
+  background-color: #ffffff;
+  transform: translateY(1px) scale(1.02); /* Change this to the desired hover background color */
+}
+
+.offer-box .box1 img {
+  margin-left: 10px;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: -30% !important;
+  display: block;
+  margin-top: auto;
+}
+
+
+.offer-box .box2 {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 34px;
+  margin: 3px;
+  overflow-y: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adding a smooth transition effect */
+}
+
+.offer-box .box2:hover {
+  background-color: #ffffff;
+  transform: translateY(1px) scale(1.017); /* Change this to the desired hover background color */
+}
+
+.offer-box .box2 img {
+  margin: auto;
+  display: block;
+  width: 50%;
+  height: 100px;
+}
+
+.offer-box .box3 {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 34px;
+  margin: 3px;
+  overflow-y: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adding a smooth transition effect */
+}
+
+.offer-box .box3:hover {
+  background-color: #ffffff;
+  transform: translateY(1px) scale(1.02); /* Change this to the desired hover background color */
+}
+
+.offer-box .box3 img {
+  margin-top: -2.9% !important;
+  margin-left: 116px;
+  height: 105px;
+  display: block;
+}
+
+.hbox-cent1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  margin-top: -13%;
+}
+
+.hbox-cent2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  margin-top: 4.78%;
+}
+
+.hbox-cent3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  margin-top: 7.88%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  footer img {
+    width: 80%;
+  }
+}
+
+.footer {
+    background-color: #ff9393; 
+    padding: 60px; 
+    padding-left: 100px;
+    text-decoration: none;
+    list-style: none;
+    height: 100%;
+
+  }
+  
+s
+.zomato-content {
+  background-color: #f0eeee !important;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-color: transparent;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+}
+
+.zomato-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.zomato-column {
+  flex: 1;
+}
+
+.zomato-section {
+  margin-bottom: 20px;
+}
+
+.zomato-section-heading {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #000000;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 5px;
+  font-weight: 700;
+  font-size: 1.9rem;
+  padding-bottom: 3px;
+}
+
+.zomato-list {
+  list-style: none;
+  padding: 0;
+}
+
+.zomato-list li {
+  color: black;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 5px;
+  margin-bottom: 8px;
+  list-style: none;
+}
+
+.links {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+
+.links li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 5px;
+  margin-bottom: 8px;
+}
+
+
+.city-search {
+    text-align: center;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+select {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the dropdown arrow */
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('path-to-your-arrow-icon.png'); /* Customize the arrow icon */
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 25px; /* Adjust as needed */
+}
